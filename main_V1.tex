@@ -54,8 +54,13 @@
 \makeatother
 
 \author{Fengjiang Li}
-\address[]{School of Mathematical Sciences\\ East China Normal University\\
-	Shanghai, 200241}
+\address[Fengjiang Li]
+   {1. Mathematical Science Research Center\\ Chongqing University of Technology\\ Chongqing\\ 400054. 
+	\newline 
+	2. School of Mathematical Sciences\\ East China Normal University\\
+	Shanghai\\ 200241}
+
+
 \email{lianyisky@163.com}
 
 
@@ -68,9 +73,8 @@
 \keywords{Gradient Ricci solitons, harmonic Weyl curvature, Codazzi tensor}
 
 \begin{abstract}
-Our main aim in this paper is to investigate the rigidity of complete noncompact gradient steady Ricci solitons with harmonic Weyl tensor. More precisely, we prove that an $n$-dimensional ($n\geq 5$) complete noncompact gradient steady Ricci soliton with harmonic Weyl tensor is either Ricci flat or isometric to the Bryant soliton up to scaling. We also derive a classification result for complete noncompact gradient expanding Ricci solitons with harmonic Weyl tensor. 
-Meanwhile, for $n\ge 5$, we provide a local structure theorem for $n$-dimensional connected (not necessarily complete) gradient Ricci solitons with harmonic Weyl curvature, thus extending the work of Kim \cite{Kim} for $n=4$. 
-Furthermore, a similar method can be applied to treat vacuum static spaces and CPE metrics with harmonic curvature \cite {F-M-1, CL}, as well as quasi-Einstein manifolds with harmonic Weyl curvature \cite{CLS}.
+Our main aim in this paper is to investigate the rigidity of complete noncompact gradient steady Ricci solitons with harmonic Weyl tensor. More precisely, we prove that an $n$-dimensional ($n\geq 5$) complete noncompact gradient steady Ricci soliton with harmonic Weyl tensor and multiply warped product metric is either Ricci flat or isometric to the Bryant soliton up to scaling. 
+Meanwhile, for $n\ge 5$, we provide a local structure theorem for $n$-dimensional connected (not necessarily complete) gradient Ricci solitons with harmonic Weyl curvature and multiply warped product metric.
 \end{abstract}
 
 \maketitle
@@ -103,10 +107,48 @@ Recently, Kim \cite{Kim} has provided a positive answer to the above question fo
 In fact, Kim produced a very nice local description of such Ricci soliton metrics and their potential functions. His method of proof was motivated by the work of Cao-Chen \cite{CC1, CC2}, and also based on Derdzi\'{n}ski's study on Codazzi tensors \cite{De} (the harmonicity of the Weyl tensor is equivalent to the Schouten tensor being Codazzi).  
 Combining with the gradient Ricci soliton condition, Kim managed to analyze in detail the situation when the Ricci tensor has two and three distinct eigenvalues. However, difficulties arise in the higher dimensional case. Indeed, as the dimension increases, so do the numbers and multiplicities of distinct Ricci-eigenvalues and the situation becomes more subtle.
 
-In this paper, motivated by Kim's work [31], we study $n$-dimensional ($n\geq 5$) complete gradient Ricci solitons with harmonic Weyl curvature. Our first main result is the following general classification result. 
+\medskip
+On the other hand, the condition harmonic Weyl curvature is equivalent to the Schouten tensor being a Codazzi tensor. 
+Derdzi\'{n}ski \cite{De} described the following: for a Codazzi tensor $A$ and a point $x$ in $M$, 
+let $E_A(x)$ be the number of distinct eigenvalues of $A_x$,
+and set 
+\[
+M_A = \{  x \in M \ | E_A {\rm \ is \ constant \ in \ a \ neighborhood \ of \ } x \}.
+\] 
+Then $M_A$ is an open dense subset of $M$;
+in each connected component of $M_A$, 
+the eigenvalues are well-defined and differentiable functions.
+As a gradient Ricci soliton, 
+$(M,g,f)$ is real analytic in harmonic coordinates; see \cite{Iv, HPW}. 
+Then if $f$ is not constant, $\{\nabla f \neq 0\}$ is open and dense in $M$ and $\nabla f $ is an eigenvector field of the Ricci tensor (see \ref{lemma3.1}). 
+Hence for each point $p\in M_A \cap \{ \nabla f \neq 0  \}$, there exists a neighborhood $U$ of $p$, 
+such that the number of distinct eigenvalues of the Ricci tensor is constant on $U$,
+and we assume that the multiplicities of $m$ distinct Ricci eigenvalues are $r_{1}, r_{2}, \cdots, r_{m}$, respectively, 
+except for the one, which is the eigenvalue with respect to the eigenvector $\nabla f$,
+where $1+r_{1}+r_{2}+ \cdots+ r_{m}=n $.
+
+\begin{definition}
+A gradient Ricci soliton metric $g$ is called multiply warped product metric of eigenspaces with the Ricci tensor,
+if for each point $p \in M_A \cap \{ \nabla f \neq 0  \}$, there exists a neighborhood $U$ of $p$ 
+such that 
+\[
+U = L\times  _{h_1}L_1 \cdots \times _{h_l}L_l \times _{h_{l+1}}N_{l+1}\times\cdots \times _{h_{m}}N_{m}
+\]
+and the metric $g$, when restricted to $U$, is a multiply warped product metric of the form
+\begin{equation*}
+	g= ds^2 + h^2_1(s)  dt_1^2 + \cdots 
+	+ h^2_l(s) dt_l^2+ h^2_{l+1}(s) \tilde{g}_{l+1}+ \cdots 
+	+h^2_{m}(s) \tilde{g}_{m},
+\end{equation*}
+where $h_j(s)$ are smooth positive functions for $1\leq j \leq m$,
+$dim ~L_\nu$=1 for $1\leq \nu \leq l$, and 
+$(N_\mu, \tilde{g}_{\mu})$ is an $r_\mu$-dimensional integral submanifold of the eigenspaces corresponding to the Ricci-eigenvalue for $l+1\leq \mu \leq m$.	
+\end{definition}
+
+In this paper, motivated by Kim's work \cite{Kim}, we study $n$-dimensional ($n\geq 5$) complete gradient Ricci solitons with harmonic Weyl curvature and multiply warped product metric of eigenspaces with the Ricci tensor. Our first main result is the following classification result. 
 
 \begin{theorem} \label{complete}
-	Let $(M^n, g, f)$, $n\geq 5$,  be a complete $n$-dimensional gradient Ricci soliton with harmonic Weyl curvature. Then it is one of the following types:
+	Let $(M^n, g, f)$, $n\geq 5$,  be a complete $n$-dimensional gradient Ricci soliton with harmonic Weyl curvature and multiply warped product metric of eigenspaces  with the Ricci tensor. Then it is one of the following types:
 		
 	\smallskip	
 	{\rm (i)} 
@@ -117,21 +159,19 @@ In this paper, motivated by Kim's work [31], we study $n$-dimensional ($n\geq 5$
 	{\rm (ii)} $(M^n, g)$ has the vanishing covariant $3$-tensor $D$ of Cao-Chen \cite{CC1, CC2}. 
 \end{theorem}
 
-Note that, as mentioned before, the shrinking case of Theorem \ref{complete} was already known \cite{FG, MS}. In addition, Theorem \ref{complete} (ii) includes the case when $(M^n, g)$ is Einstein: if $f$ is a constant function then the vanishing of $D$-tensor follows from its definition, and the case of nonconstant $f$ follows from Theorem \ref{same} or from, e.g., the work of Cheeger-Colding \cite{CC} on warped products and Hessians.
+Note that, as mentioned before, the analog of Theorem 1.1 in the shrinking case was already known \cite{FG, MS}. In addition, Theorem \ref{complete} (ii) includes the case when $(M^n, g)$ is Einstein: if $f$ is a constant function then the vanishing of $D$-tensor follows from its definition, and the case of nonconstant $f$ follows from Theorem \ref{same} or from, e.g., the work of Cheeger-Colding \cite{CC} on warped products and Hessians.
 
-Meanwhile, Cao-Chen \cite{CC2}  showed that any $n$-dimensional ($n\geq 4$) gradient Ricci soliton with vanishing $D$-tensor has harmonic Weyl curvature. Therefore, together with Theorem \ref{complete},  an $n$-dimensional ($n\geq 5$) gradient {\it steady} Ricci soliton has harmonic Weyl curvature if and only if the $D$-tensor vanishes.
-In particular, as a consequence of Theorem \ref{complete} and the very recent work of Cao-Yu \cite{CY}, we have the following  positive answer to the \textbf{Main Question} for all $n\ge 5$.  
+Meanwhile, Cao-Chen \cite{CC2}  showed that any $n$-dimensional ($n\geq 4$) gradient Ricci soliton with vanishing $D$-tensor has harmonic Weyl curvature. Therefore, together with Theorem \ref{complete},  an $n$-dimensional ($n\geq 5$) gradient {\it steady} Ricci soliton has harmonic Weyl curvature and multiply warped product metric if and only if the $D$-tensor vanishes.
+In particular, as a consequence of Theorem \ref{complete} and the very recent work of Cao-Yu \cite{CY}, we have the following partial answer to Main Question for all $n\ge 5$.  
 
 \begin{theorem} \label{steady}
-Let $(M^n, g, f)$, $n\geq 5$, be a complete noncompact gradient steady Ricci soliton with harmonic Weyl curvature. Then it is either Ricci flat or isometric to the Bryant soliton up to scaling.
+Let $(M^n, g, f)$, $n\geq 5$, be a complete noncompact gradient steady Ricci soliton with harmonic Weyl curvature  and multiply warped product metric of eigenspaces  with the Ricci tensor. Then it is either Ricci flat or isometric to the Bryant soliton up to scaling.
 \end{theorem}
-
-We remark that for the {\it shrinking} soliton case, Theorem \ref{complete} together with Proposition 3.2 of Cao-Yu \cite{CY} provides a different proof (which is pointwise) of the rigidity result of \cite{FG, MS}.
 
 On the other hand, the {\it expanding} solitons are less rigid, and various works have been done recently; see, e.g., \cite{PW, CD, Cho} and the references therein. As another consequence of Theorem \ref{complete} and the work of Cao-Yu \cite{CY} for complete $D$-flat expanding solitons, we have the following classification result.
 
 \begin{theorem} \label{expand}
-Let $(M, g,f)$, $n\geq 5$, be a complete expanding gradient Ricci soliton with harmonic Weyl curvature.
+Let $(M, g,f)$, $n\geq 5$, be a complete expanding gradient Ricci soliton with harmonic Weyl curvature and multiply warped product metric of eigenspaces  with the Ricci tensor.
 Then it is one of the following types.
 	
 	\smallskip	
@@ -158,10 +198,10 @@ Then it is one of the following types.
 where $\left(N^{n-1}, \bar{g} \right) $ is an Einstein manifold of negative scalar curvature.
 \end{theorem}
 
-Inspired by the work of Cao-Chen \cite{CC1, CC2} and the work of Kim \cite{Kim}, we in fact derived a local description of Ricci soliton metrics and potential functions under the assumption of harmonic Weyl curvature. By using the method of exterior differential and moving frames, we first obtain the integrability condition of harmonicity and give a local structure of the soliton metric, which is necessarily a multiply warped product. Then we divide the discussion into three cases, according to the numbers and multiplicities of distinct Ricci-eigenvalues. As a result, we obtain the following local classification. 
+Inspired by the work of Cao-Chen \cite{CC1, CC2} and the work of Kim \cite{Kim}, we in fact derived a local description of Ricci soliton potential functions under the assumption of harmonic Weyl curvature. By using the method of exterior differential and moving frames, we first obtain the integrability condition of harmonicity and give a local structure of the soliton metric with a multiply warped product. Then we divide the discussion into three cases, according to the numbers and multiplicities of distinct Ricci-eigenvalues. As a result, we obtain the following local classification. 
 
 \begin{theorem} \label{local}
-	Let $(M^n, g, f)$, $(n\geq 5)$, be an $n$-dimensional (not necessarily complete) connected gradient Ricci soliton with harmonic Weyl curvature. Then it is one of the following four types.
+	Let $(M^n, g, f)$, $(n\geq 5)$, be an $n$-dimensional (not necessarily complete) connected gradient Ricci soliton with harmonic Weyl curvature and multiply warped product metric of eigenspaces with the Ricci tensor. Then it is one of the following four types.
 	
 	\smallskip
 	{\rm (i)} $(M^n, g)$ is Einstein, and $f$ is a constant function.
@@ -190,26 +230,25 @@ Inspired by the work of Cao-Chen \cite{CC1, CC2} and the work of Kim \cite{Kim},
 	Moreover, the covariant $3$-tensor $D$ of Cao-Chen \cite{CC1, CC2} vanishes.
 \end{theorem}
 
-
 We point out that the incomplete steady gradient soliton in Theorem \ref{local} {\rm (iii)} has negative scalar curvature, which is in contrast to the fact that complete steady gradient solitons should have nonnegative scalar curvature \cite{Ch}. Thus, Theorem \ref{complete} follows immediately from Theorem \ref{local}.
 \begin{remark} 
-	The proof of Theorem \ref{local} has been further extended to treat vacuum static spaces and CPE metrics with harmonic curvature \cite {F-M-1, CL}, as well as quasi-Einstein manifolds with harmonic Weyl curvature \cite{CLS}.
+	The proof of Theorem \ref{local} has been further extended to treat vacuum static spaces and CPE metrics with harmonic curvature \cite {F-M-1, CL}, as well as quasi-Einstein manifolds with harmonic Weyl curvature \cite{CLS},  under the assumption of multiply warped product metric of eigenspaces  with the Ricci tensor.
 \end{remark} 
 
 Next, we discuss some applications. 
 In \cite{CMM}, the authors obtained some results on gradient Ricci solitons with certain vanishing conditions on the Weyl tensor. More precisely, assuming ${\rm div}^4(W)=0$ and under certain Ricci curvature assumptions,
 they showed that the Ricci soliton has harmonic Weyl curvature. 
-Combining this fact with Theorem \ref{steady}, Theorem \ref{expand}  and the work of \cite{Kim} for $n=4$, we have the following two corollaries. 
+Combining this fact with Theorem \ref{steady}, Theorem \ref{expand} and the work of \cite{Kim} for $n=4$, we have the following two corollaries. 
 
 \begin{corollary}\label{cor1.4}
-	Let $(M^n,g,f)$, $n\geq 4$, be a complete gradient steady Ricci soliton 
+	Let $(M^n,g,f)$, $n\geq 4$, be a complete gradient steady Ricci soliton
 	with positive Ricci curvature such that the scalar curvature attains its maximum at some point $p_0\in M$. 
-	If in addition $\operatorname{div}^4(W)=0$, then $M$ is either Ricci flat or isometric to the Bryant soliton.
+	If the soliton is of multiply warped product metric and $\operatorname{div}^4(W)=0$, then $M$ is either Ricci flat or isometric to the Bryant soliton.
 \end{corollary}
 
 \begin{corollary}\label{cor1.6}
 	Let $(M^n,g)$, $n\geq 4$, be a complete gradient expanding Ricci soliton with nonnegative Ricci curvature. 
-	If ${\rm div}^4(W)=0$, then $M$ is one of the following: 
+	If the soliton is of multiply warped product metric and $\operatorname{div}^4(W)=0$, then $M$ is one of the following: 
 	
 	\smallskip
 	{\rm (i)} $g$ is an Einstein metric with $f$ a constant function.
@@ -236,30 +275,30 @@ Combining this fact with Theorem \ref{steady}, Theorem \ref{expand}  and the wor
 	where $\left(N^{n-1}, \bar{g} \right) $ is an Einstein manifold of negative scalar curvature.
 \end{corollary}
 	
-Finally, as another application of Theorem \ref{local},  we will obtain the local classification of gradient Ricci soliton with harmonic curvature. As a consequence, it immediately follows that complete gradient Ricci solitons with harmonic curvature are rigid, which was first proved by Petersen and Wylie in \cite{PW}.
-\begin{corollary} \label{harcur}
-	Let $(M^n, g, f)$, $n\geq 5$, be a (not necessarily complete) 
-	$n$-dimensional gradient Ricci soliton with harmonic curvature. 
-	Then it is locally one of the two types  below.
+%Finally, as another application of Theorem \ref{local},  we will obtain the local classification of gradient Ricci soliton with harmonic curvature. As a consequence, it immediately follows that complete gradient Ricci solitons with harmonic curvature are rigid, which was first proved by Petersen and Wylie in \cite{PW}.
+%\begin{corollary} \label{harcur}
+%	Let $(M^n, g, f)$, $n\geq 5$, be a (not necessarily complete) 
+%	$n$-dimensional gradient Ricci soliton with harmonic curvature. 
+%	Then it is locally one of the two types  below.
 	
-	\smallskip
-	{\rm (i)} $(M, g)$ is an Einstein manifold and $f$ is constant.
+%	\smallskip
+%	{\rm (i)} $(M, g)$ is an Einstein manifold and $f$ is constant.
 	
-	\smallskip	
-	{\rm (ii)}  
-	For each point $p$, there exists a neighborhood $U$ of $p$, such that
-	$(U, g)$ is isometric to a domain in $ \mathbb{R}^{r}\times N^{n-r}$,
-	where $\mathbb{R}^{r}$ has the Euclidean metric, 
-	$N^{n-r}$ is an $(n-r)$ dimensional Einstein manifold
-	with the Einstein constant $\rho\neq 0$, $1 \leq r\leq n$ and $ r\neq n-1$.
-	Also $f = \frac{\rho}{2} |x|^2$ modulo a constant on the Euclidean factor.
- \end{corollary}
+%	\smallskip	
+%	{\rm (ii)}  
+%	For each point $p$, there exists a neighborhood $U$ of $p$, such that
+%	$(U, g)$ is isometric to a domain in $ \mathbb{R}^{r}\times N^{n-r}$,
+%	where $\mathbb{R}^{r}$ has the Euclidean metric, 
+%	$N^{n-r}$ is an $(n-r)$ dimensional Einstein manifold
+%	with the Einstein constant $\rho\neq 0$, $1 \leq r\leq n$ and $ r\neq n-1$.
+%	Also $f = \frac{\rho}{2} |x|^2$ modulo a constant on the Euclidean factor.
+ %\end{corollary}
 
 This paper is organized as follows. 
 In Section 2, we give some formulas and notations for Riemannian manifolds
 and Ricci solitons by using the method of moving frames.
 In Section 3, we derive the integrability conditions (ODEs) for a gradient Ricci soliton with harmonic Weyl tensor
-and show that, locally, the soliton metric is a multiply warped product.
+when the local structure of the metric is a multiply warped product.
 In Section 4-6, we divide our discussion into three cases according to the numbers and multiplicities of distinct
 Ricci-eigenvalues $\lambda_i$, $i=1,2,\cdots, n$.
 Here, we denote $\lambda_1$ as the Ricci-eigenvalue with respect to the gradient vector $\nabla f$ of the potential function. 
@@ -270,7 +309,7 @@ but it turns out that this case cannot occur.
 In Section 5, we analyze the case that 
 there are exactly two distinct Ricci values in the eigenvalues $\lambda_2, \cdots, \lambda_n$.
 Then two subcases are divided according to 
-whether one of the two distinct Ricci-eigenfunctions is of single multiplicity or not.
+whether one of the two distinct Ricci-eigenvalues is of single multiplicity or not.
 Types {\rm (ii)} and {\rm (iii)} of Theorem \ref{local} come from this part.
 In Section 6, we treat the remaining case that all $\lambda_2,~\lambda_3,~\cdots,~\lambda_n$ are equal,
 for which the $D$-tensor must vanish. 
@@ -466,8 +505,7 @@ We will recall some well-known facts of gradient Ricci solitons.
 	such that $\lambda_1$ and $R$ are functions of $s$ only.
 	Secondly, we show in Lemma \ref{lemma3.3} that
 	the Ricci-eigenvalues $\lambda_i$, $i=1,2,\cdots, n$ locally depend only on the variable $s$.
-	At last, we derive the integrability conditions and 
-	the local structure of the metric being a multiply warped product (see Theorem \ref{mulwar}).
+	At last, we derive the integrability conditions when the local structure of the metric is a multiply warped product (see Theorem \ref{mulwar}).
 	
 	First of all, we have the next lemma (see also Lemma 2.5 in \cite{Kim}).
 	
@@ -570,7 +608,7 @@ We will recall some well-known facts of gradient Ricci solitons.
 	\]
 	and $\lambda_{2},\, \lambda_{r_1+2},\,\cdots,\,	\lambda_{r_1+r_2+\cdots+r_{m-1}+2}$
 	are distinct.
-	Next, our first goal is to prove that all Ricci-eigenfunctions $ \lambda_i $ $(i=1, \cdots ,n)$
+	Next, our first goal is to prove that all Ricci-eigenvalues $ \lambda_i $ $(i=1, \cdots ,n)$
 	depend only on the local variable $s$.
 	\begin{lemma} \label{lemma3.2}
 		Let $(M, g, f)$ be an $n$-dimensional gradient Ricci soliton  with harmonic Weyl curvature.
@@ -614,7 +652,7 @@ We will recall some well-known facts of gradient Ricci solitons.
 	\begin{lemma} \label{lemma3.3}
 		Let $(M, g, f)$ be an $n$-dimensional gradient Ricci soliton  with harmonic Weyl curvature.
 		For the above local frame field $\{ E_i \}$ in $M_{A} \cap \{ \nabla f \neq 0 \}$,
-		the Ricci eigenfunctions $ \lambda_i $ $(i=1, \cdots ,n)$
+		the Ricci eigenvalues $ \lambda_i $ $(i=1, \cdots ,n)$
 		depend only on the local variable $s$, so do the functions $\xi_a$ for $2 \leq a\leq n$.
 	\end{lemma}
 	
@@ -662,180 +700,209 @@ We will recall some well-known facts of gradient Ricci solitons.
 	where $[a]=[b]$, $[\alpha]=[\beta]$ and $[a]\neq[\alpha]$.
 		\begin{lemma} \label{lemma3.3-}
 		Let $(M, g, f)$ be an $n$-dimensional gradient Ricci soliton  with harmonic Weyl curvature.
-		For the above local frame field $\{ E_i \}$ in $M_{A} \cap \{ \nabla f \neq 0 \}$,
-		we have that
-		\begin{equation}\label{3.7}
-		\omega_{a\alpha}=0,
+		For the above local frame field $\{ E_i \}$ in $M_{A} \cap \{ \nabla f \neq 0 \}$,  for $p \notin \{1,[a],[\alpha]\}$.
+		we have that  
+		
+		\begin{equation}\label{new}
+			\left(\lambda_a-\lambda_\alpha \right)\omega_{a\alpha}(E_{p})=	\left(\lambda_a-\lambda_p \right)\omega_{ap}(E_{\alpha}),
 		\end{equation}
 		\begin{equation}\label{3.8}
-		R_{1a1b}=-\left( \xi'_a+\xi^2_a\right) \delta_{ab}
+			R_{1a1b}=-\left( \xi'_a+\xi^2_a\right) \delta_{ab},
 		\end{equation}
-    and 
-		\begin{equation}\label{3.9}
-		R_{a\alpha b \beta}=-\xi_a\xi_\alpha \delta_{ab}\delta_{\alpha\beta}.
+		\begin{equation}\label{3.11}
+			\xi'_a+\xi^2_a=-\frac{R'}{2(n-1)f'},
 		\end{equation}
+		\begin{equation}\label{3.13}
+			\lambda_{1}=-f''+\rho=-(n-1)\left( \xi'_a+\xi^2_a\right)
+		\end{equation}
+		and
+		\begin{equation}\label{3.12}
+			\lambda'_a-\left(\lambda_1-\lambda_a \right)\xi_a=\frac{R'}{2(n-1)}.
+		\end{equation}
+		
 	\end{lemma}
-
+	
 	\begin{proof}	
 		We continue to compute the covariant derivatives of $R_{ij}$.
-	For $a\neq b$
-   \[
-	R_{aa,1}=\lambda'_a,  \quad R_{aa,b}=R_{aa,\alpha}=0 \quad  and \quad R_{ab,i}=0;
-   \]
-	while for the different range of indices, 
-	\[
+		For $a\neq b$
+		\[
+		R_{aa,1}=\lambda'_a,  \quad R_{aa,b}=R_{aa,\alpha}=0 \quad  and \quad R_{ab,i}=0,
+		\]
+		while for the different range of indices, 
+		\[
 		\left(\lambda_a-\lambda_\alpha \right)\omega_{a\alpha}
-	= \sum_{k=1}^{n}R_{a\alpha,k}\omega_k 
-	= R_{a\alpha,1}\omega_1+R_{a\alpha,a}\omega_a+R_{a\alpha,\alpha}\omega_\alpha
-	+\sum_{i\neq 1,a,\alpha}R_{a\alpha,i}\omega_i.
-	\]
-	Since $R_{a\alpha,1}=0$ and $R_{a\alpha,a}=0$,
-     $\omega_{a\alpha}(E_1)= \omega_{a\alpha}(E_a)=\omega_{a\alpha}(E_\alpha)=0$.
-	Next we will compute the curvature. From  \eqref{2.2} and \eqref{3.4},
-	\[
-	-\frac{1}{2}R_{1aij}\omega_{i}\wedge\omega_{j}=\left(\xi'_a+\xi^2_a \right)\omega_{1}\wedge\omega_{a}
-	+ \sum_{\alpha\geq 2}\left(\xi_a-\xi_\alpha \right)\omega_{a\alpha}\wedge\omega_{\alpha},
-	\]
-	which shows \eqref{3.8} since $\omega_{a\alpha}(E_1)=0$.
-	On the other hand, by \eqref{2.27}, $R_{1ijk}=0$
-	when $i,~ j~ {\rm and }~ k $ are mutually different. 
-	Thus, $\omega_{a\alpha}(E_i)=0$ since $\lambda_a \neq \lambda_\alpha$ implies $\xi_a\neq\xi_\alpha$,
-	and then \eqref{3.7} holds.
-	Therefore, from the structure equation
-	\[
-		-\frac{1}{2}R_{a\alpha ij}\omega_{i}\wedge\omega_{j}=\xi_a\xi_\alpha \omega_{a}\wedge\omega_{\alpha},
-	\]
-	which implies \eqref{3.9}. We have completed the proof of this lemma.
-    \end{proof}
-	
-At last, we are ready to derive the integrability conditions and prove the local structure of the metric as a multiply warped product. 
-For the multiplicities of distinct Ricci eigenvalues, without loss of generality, 
-we assume that $r_{1}=r_{2}=\cdots=r_{l}=1$ and 
-$r_{l+1},~ r_{l+2},~\cdots,~ r_{m} \geq2$.  
-\begin{theorem} \label{mulwar}
-	Let $(M^n, g, f)$, $(n\geq 4)$, be an $n$-dimensional gradient Ricci soliton with harmonic Weyl curvature.
-	For each point $p \in M_A \cap \{ \nabla f \neq 0  \}$, there exists a neighborhood $U$ of $p$ 
-	such that 
-	\[
-	U = L\times\,  _{h_1}L_1 \cdots \times\, _{h_l}L_l\cdots \times\, _{h_{l+1}}N_{l+1}\times\cdots \times\, _{h_m}N_{m}
-	\]
-	is a multiply warped product furnished with the metric 
-	\begin{equation} \label{3.10}
-	g= ds^2 + h^2_1(s)  dt_1^2 + \cdots 
-	+ h^2_l(s) dt_l^2+ h^2_{l+1}(s) \tilde{g}_{l+1}+ \cdots 
-	+h^2_{m}(s) \tilde{g}_{m},
-	\end{equation}
-	where $h_j(s)$ are smooth positive functions for $1\leq j \leq m$,
-	$dim ~L_\nu$=1 for $1\leq \nu \leq l$, and 
-	$(N_\mu, \tilde{g}_{\mu})$ is an $r_\mu$-dimensional Einstein manifold 
-	with the Einstein constant $(r_\mu-1)k_\mu$ for $l+1\leq \mu \leq m$.
-	
-	\smallskip
-	Moreover, 
-	let $\lambda_i$ $(i=1,\cdots, n)$ be the Ricci-eigenvalues, $\lambda_1$ being the Ricci-eigenvalue with respect to the gradient vector $\nabla f$,
-	and functions $\xi_a$ be given by \eqref{3.6}.	
-	Then the following integrability conditions hold
-	\begin{equation}\label{3.11}
-	\xi'_a+\xi^2_a=-\frac{R'}{2(n-1)f'},
-	\end{equation}
-	\begin{equation}\label{3.12}
-	\lambda'_a-\left(\lambda_1-\lambda_a \right)\xi_a=\frac{R'}{2(n-1)},
-	\end{equation}
-	\begin{equation}\label{3.13}
-	\lambda_{1}=-f''+\rho=-(n-1)\left( \xi'_a+\xi^2_a\right)
-	\end{equation}
-	and
-	\begin{equation}\label{3.14}
-	\lambda_a=-f'\xi_a+\rho=- \xi'_a-\xi_a \sum^{n}_{i=2} \xi_i +( r-1)\frac{k}{h^2},
-	\end{equation}
-	Here $2\leq a\leq n$ and $\xi_a=h'/h$;  in \eqref{3.14}, when $a=2, \dots, l+1$,  then 
-	$r=1$ and $h=h_{a-1}$;
-	when $a\in \left[ l+r_{l+1}+\cdots+r_{\mu-1} +2\right]$ ,  then 
-	$r=r_\mu$, $h=h_{\mu} $ and $k=k_{\mu} $.
-\end{theorem}
-	
-	\begin{proof}
-		First, making use of \eqref{2.27} again, we see
+		= \sum_{k=1}^{n}R_{a\alpha,k}\omega_k 
+		= R_{a\alpha,1}\omega_1+R_{a\alpha,a}\omega_a+R_{a\alpha,\alpha}\omega_\alpha
+		+\sum_{i\neq 1,a,\alpha}R_{a\alpha,i}\omega_i.
+		\]
+		Since $R_{a\alpha,1}=0$ and $R_{a\alpha,a}=0$,
+		$\omega_{a\alpha}(E_1)= \omega_{a\alpha}(E_a)=\omega_{a\alpha}(E_\alpha)=0$.
+		Therefore, 
+		\[
+		\left(\lambda_a-\lambda_\alpha \right)\omega_{a\alpha}
+		=\sum_{p\notin \{1,[a],[\alpha]\}}R_{a\alpha,p}\omega_p.
+		\]
+		Therefore, when $p\in \{1,[a],[\alpha]\}$, $\omega_{a\alpha}(E_p)=0$; while $p \notin \{1,[a],[\alpha]\}$
+		\[
+		\left(\lambda_a-\lambda_\alpha \right)\omega_{a\alpha}(E_p)=R_{a\alpha,p}.
+		\]
+		By (2.27), $R_{a\alpha,p}=R_{ap,\alpha}=R_{p\alpha,a}$,  then
+		\[
+		\left(\lambda_a-\lambda_\alpha \right)\omega_{a\alpha}(E_p)=\left(\lambda_a-\lambda_p\right)\omega_{ap}(E_\alpha)
+		=\left(\lambda_\alpha-\lambda_p \right)\omega_{\alpha p}(E_a),
+		\]
+		which shows  \eqref{new} . 
+		
+		Next we will compute the curvature. From  \eqref{2.2} and \eqref{3.4},
+		\[
+		-\frac{1}{2}R_{1aij}\omega_{i}\wedge\omega_{j}=\left(\xi'_a+\xi^2_a \right)\omega_{1}\wedge\omega_{a}
+		+ \sum_{\alpha\geq 2}\left(\xi_a-\xi_\alpha \right)\omega_{a\alpha}\wedge\omega_{\alpha},
+		\]
+		which shows \eqref{3.8} since $\omega_{a\alpha}(E_1)=0$.
+		Making use of \eqref{2.27} again, then we see
 		\[ 
 		R_{1a1a}=\frac{R'}{2(n-1)f'} 
 		\]
 		which shows that all $R_{1a1a}$ are equal for $a=2, \cdots, n$, and \eqref{3.11} holds by \eqref{3.8}.
 		Then in combination with \eqref{3.3}, we immediately
-		get \eqref{3.13}. Putting $R_{aa,1}=\lambda'_1$ into \eqref{3.5} implies harmonic condition \eqref{3.12}.
-
-   Moreover, by equations \eqref{2.1}, \eqref{3.4} and \eqref{3.7}, 
-    \[
-    d\omega_\alpha=\sum_\beta\left( \xi_\alpha\delta_{\alpha\beta}
-    +\omega_{\alpha\beta} \right) \wedge \omega_{\beta}  \equiv 0 
-     ~ ( {\rm mod} ~ \omega_\beta).
-     \]
-    By $d\omega_1=0$ and the Frobenius theorem, the distribution
-     $V_a={\rm Span} \{E_b: b\in [a] \} $ is integrable.
-    It is worth noting that $\omega_{a\alpha}=0$ yields more information than that Ricci-eigenspaces form mutually orthogonal differentiable distributions. Denoting $N_a$ to be the integrable submanifold of $V_a$, 
-    we consider the $r$-dimensional isometric immersion submanifold $N_a$ with the metric 
-      $\bar{g}=\sum_{b \in [a]} \omega^2_{b}$
-    of the manifold $(M,g)$.
+		get \eqref{3.13}. Putting $R_{aa,1}=\lambda'_a$ into \eqref{3.5} implies harmonic condition \eqref{3.12}.
+		We have completed the proof of this lemma.
+	\end{proof}
+	
+	\begin{remark} \label{kim}
+		We would like to express our gratitude to Professor Kim for pointing out an error that when the eigenvalues $\lambda_2,\cdots,~\lambda_n$ are at least three distinct values, the equation $\omega_{a\alpha}=0$ is not always true. However, under the harmonic Weyl tensor condition, we can only establish the following exchange relation as shown in \eqref{new}.
+		Under certain specific conditions, such as when at most two eigenvalues $\lambda_2,\cdots,~\lambda_n$ are distinct, $\omega_{a\alpha}=0$ holds true.
+	\end{remark}
+	
+	
+	At last, we are ready to derive the integrability conditions and the local structure of the metric as a multiply warped product. 
+	For the multiplicities of distinct Ricci eigenvalues, without loss of generality, 
+	we assume that $r_{1}=r_{2}=\cdots=r_{l}=1$ and 
+	$r_{l+1},~ r_{l+2},~\cdots,~ r_{m} \geq2$.  
+	\begin{theorem} \label{mulwar}
+		Let $(M^n, g, f)$, $(n\geq 4)$, be an $n$-dimensional gradient Ricci soliton with harmonic Weyl curvature. 
+		For each point $p \in M_A \cap \{ \nabla f \neq 0  \}$ and the above local frame field $\{ E_i \}$ in $M_{A} \cap \{ \nabla f \neq 0 \}$, $\omega_{a\alpha}=0$ for $k \notin \{1,[a],[\alpha]\}$ if and only if there exists a neighborhood $U$ of $p$ 
+		such that 
+		\[
+		U = L\times\,  _{h_1}L_1 \cdots \times\, _{h_l}L_l\cdots \times\, _{h_{l+1}}N_{l+1}\times\cdots \times\, _{h_m}N_{m}
+		\]
+		is a multiply warped product furnished with the metric 
+		\begin{equation} \label{3.10}
+			g= ds^2 + h^2_1(s)  dt_1^2 + \cdots 
+			+ h^2_l(s) dt_l^2+ h^2_{l+1}(s) \tilde{g}_{l+1}+ \cdots 
+			+h^2_{m}(s) \tilde{g}_{m},
+		\end{equation}
+		where $h_j(s)$ are smooth positive functions for $1\leq j \leq m$,
+		$dim ~L_\nu$=1 for $1\leq \nu \leq l$, and 
+		$(N_\mu, \tilde{g}_{\mu})$ is an $r_\mu$-dimensional Einstein manifold 
+		with the Einstein constant $(r_\mu-1)k_\mu$ for $l+1\leq \mu \leq m$.
+		Let $\lambda_i$ $(i=1,\cdots, n)$ be the Ricci-eigenvalues, $\lambda_1$ being the Ricci-eigenvalue with respect to the gradient vector $\nabla f$,
+		and functions $\xi_a$ be given by \eqref{3.6}.	
+		Then the following integrability conditions hold
+		\begin{equation}%\label{3.11}
+			\xi'_a+\xi^2_a=-\frac{R'}{2(n-1)f'},
+		\end{equation}
+		\begin{equation}%\label{3.12}
+			\lambda'_a-\left(\lambda_1-\lambda_a \right)\xi_a=\frac{R'}{2(n-1)},
+		\end{equation}
+		\begin{equation}%\label{3.13}
+			\lambda_{1}=-f''+\rho=-(n-1)\left( \xi'_a+\xi^2_a\right)
+		\end{equation}
+		and
+		\begin{equation}\label{3.14}
+			\lambda_a=-f'\xi_a+\rho=- \xi'_a-\xi_a \sum^{n}_{i=2} \xi_i +( r-1)\frac{k}{h^2}.
+		\end{equation}
+		Here $2\leq a\leq n$ and $\xi_a=h'/h$;  in \eqref{3.14}, when $a=2, \dots, l+1$,  then 
+		$r=1$ and $h=h_{a-1}$;
+		when $a\in \left[ l+r_{l+1}+\cdots+r_{\mu-1} +2\right]$ ,  then 
+		$r=r_\mu$, $h=h_{\mu} $ and $k=k_{\mu} $.
+	\end{theorem}
+	
+	\begin{proof}
+		Adequacy is obvious; we only need to prove necessity.
+		From the structure equation 
+		\[
+		-\frac{1}{2}R_{a\alpha ij}\omega_{i}\wedge\omega_{j}=\xi_a\xi_\alpha \omega_{a}\wedge\omega_{\alpha},
+		\]
+		which implies	
+		\begin{equation}\label{3.9}
+			R_{a\alpha b \beta}=-\xi_a\xi_\alpha \delta_{ab}\delta_{\alpha\beta}.
+		\end{equation}		
 		
-	When the multiplicity $r$ of the Ricci-eigenvalue $\lambda_{a}$ is not less than two, it follows from  \eqref{3.8} and \eqref{3.9} that 
-	\begin{equation}
-	\begin{aligned}\label{3.15}
-	R_{ab}=&R_{a1 b1}+\sum_{\alpha}R_{a\alpha b\alpha}+\sum_{c} R_{acbc}\\
-	=&\left[ -\left( \xi'_a+\xi^2_a \right) -\xi_a \sum_{\alpha} \xi_\alpha \right] \delta_{ab} 
-	+\sum_{c} R_{acbc}.
-	\end{aligned}
-	\end{equation}
-	Making use of equations \eqref{3.4} and \eqref{3.7} again, Gauss equations imply
-	\begin{equation}\label{3.16}
-	\bar{R}_{abcd}={R}_{abcd}+
-	\xi^2_{a}\left( \delta_{ac}\delta_{bd}-\delta_{ad}\delta_{bc} \right),
-	\end{equation}
-	where $\bar{R}_{abcd}$ is the curvature tensor of $\left( N_a, \bar{g}\right) $.
-	Actually, equation \eqref{3.7} means that the submanifold $(N_a,\bar{g})$ of the Riemannian manifold 
-	$(N,~\sum_{i\neq1} \omega^2_{i})$ is totally geodesic, where $N$ is the integrable submanifold generated by the distribution
-	$V={\rm Span} \{E_2, \cdots, E_n \} $, see Lemma \ref{lemma3.1}.
-	Taking trace in \eqref{3.16} and then plugging \eqref{3.15} into it, one can get
-	\begin{equation*}
-	\begin{aligned}
-	\bar{R}_{ac}=&\sum_{b}R_{abcb}+\left( r-1\right) \xi^2_{a}\delta_{ac}\\
-	=& \left[\lambda_a+\left( \xi'_a+\xi^2_a \right) +\xi_a \sum_{\alpha \notin [a]} \xi_\alpha +( r-1) \xi^2_{a} \right] \delta_{ac}
-	\end{aligned}
-	\end{equation*}
-	which depends on $s$ only. Hence, the metric $\bar{g}$ is Einstein.
-	Then we can assume that $\bar{g}=h^2(s)\tilde{g}$, where $h(s)$ is a positive function and $\tilde{g}$ is Einstein with the Einstein constant $(r-1)k$. So 
-	\[
-	\bar{R}_{ac}=\frac{(r-1)k}{h^2}\delta_{ac}
-	\]
-	and 
+		
+		
+		Moreover, by equations \eqref{2.1}, \eqref{3.4} and \eqref{new}, 
+		\[
+		d\omega_\alpha=\sum_\beta\left( \xi_\alpha\delta_{\alpha\beta}
+		+\omega_{\alpha\beta} \right) \wedge \omega_{\beta}  \equiv 0 
+		~ ( {\rm mod} ~ \omega_\beta).
+		\]
+		By $d\omega_1=0$ and the Frobenius theorem, the distribution
+		$V_a={\rm Span} \{E_b: b\in [a] \} $ is integrable.
+		It is worth noting that $\omega_{a\alpha}=0$ yields more information than that Ricci-eigenspaces form mutually orthogonal differentiable distributions. Denoting $N_a$ to be the integrable submanifold of $V_a$, 
+		we consider the $r$-dimensional isometric immersion submanifold $N_a$ with the metric 
+		$\bar{g}=\sum_{b \in [a]} \omega^2_{b}$
+		of the manifold $(M,g)$.
+		
+		When the multiplicity $r$ of the Ricci-eigenvalue $\lambda_{a}$ is not less than two, it follows from \eqref{3.8} and \eqref{3.9} that 
+		\begin{equation}
+			\begin{aligned}\label{3.15}
+				R_{ab}=&R_{a1 b1}+\sum_{\alpha}R_{a\alpha b\alpha}+\sum_{c} R_{acbc}\\
+				=&\left[ -\left( \xi'_a+\xi^2_a \right) -\xi_a \sum_{\alpha} \xi_\alpha \right] \delta_{ab} 
+				+\sum_{c} R_{acbc}.
+			\end{aligned}
+		\end{equation}
+		Making use of equations \eqref{3.4} and \eqref{new} again, Gauss equations imply
+		\begin{equation}\label{3.16}
+			\bar{R}_{abcd}={R}_{abcd}+
+			\xi^2_{a}\left( \delta_{ac}\delta_{bd}-\delta_{ad}\delta_{bc} \right),
+		\end{equation}
+		where $\bar{R}_{abcd}$ is the curvature tensor of $\left( N_a, \bar{g}\right) $.
+		Actually, equation \eqref{new} means that the submanifold $(N_a,\bar{g})$ of the Riemannian manifold 
+		$(N,~\sum_{i\neq1} \omega^2_{i})$ is totally geodesic, where $N$ is the integrable submanifold generated by the distribution
+		$V={\rm Span} \{E_2, \cdots, E_n \} $, see Lemma \ref{lemma3.1}.
+		Taking trace in \eqref{3.16} and then plugging \eqref{3.15} into it, one can get
+		\begin{equation*}
+			\begin{aligned}
+				\bar{R}_{ac}=&\sum_{b}R_{abcb}+\left( r-1\right) \xi^2_{a}\delta_{ac}\\
+				=& \left[\lambda_a+\left( \xi'_a+\xi^2_a \right) +\xi_a \sum_{\alpha \notin [a]} \xi_\alpha +( r-1) \xi^2_{a} \right] \delta_{ac}
+			\end{aligned}
+		\end{equation*}
+		which depends on $s$ only. Hence, the metric $\bar{g}$ is Einstein.
+		Then we can assume that $\bar{g}=h^2(s)\tilde{g}$, where $h(s)$ is a positive function and $\tilde{g}$ is Einstein with the Einstein constant $(r-1)k$. So 
+		\[
+		\bar{R}_{ac}=\frac{(r-1)k}{h^2}\delta_{ac}
+		\]
+		and 
 		\begin{equation}\label{3.17}
-		\lambda_a=- \xi'_a-\xi_a \sum^{n}_{i=2} \xi_i +( r-1)\frac{k}{h^2}.
-	\end{equation}
-	Also, it follows from the structure equation that $\xi_a=h'/h$.
+			\lambda_a=- \xi'_a-\xi_a \sum^{n}_{i=2} \xi_i +( r-1)\frac{k}{h^2}.
+		\end{equation}
+		Also, it follows from the structure equation that $\xi_a=h'/h$.
+		
+		When the Ricci tensor eigenvalue $\lambda_a$ has single multiplicity,
+		by using equations \eqref{2.1}, \eqref{3.4} and \eqref{new}, 
+		we calculate the exterior differential of 1-form $\omega_a$: 
+		\[
+		d\omega_a=\omega_{i}\wedge\omega_{ia}=\xi_a\omega_{1}\wedge\omega_a.
+		\]
+		Setting the positive function $h(s)$ such that $\xi_a=h'/h$, and we see that
+		1-form $\frac{1}{h}\omega_a$ is closed. Then there is a local function $t$ satisfying
+		$dt =\frac{1}{h(s)} \omega_a$ and 
+		\begin{equation}\label{3.18}
+			\lambda_a=R_{1a1 a}+\sum_{\alpha \notin [a]}R_{a\alpha a\alpha}
+			=- \xi'_a-\xi_a \sum^{n}_{i=2} \xi_i.
+		\end{equation}
+		
+		Consequently, we obtain that if $\omega_{a\alpha}=0$, the metric is a multiply warped product as seen in \eqref{3.10}. 
+		Furthermore, it follows that \eqref{3.14} holds from equations \eqref{2.20}, \eqref{3.17} and \eqref{3.18}. 
+		In fact, by comparing with \eqref{3.18}, there is no term $( r-1)\frac{k}{h^2}$ in \eqref{3.17}. 
+		However, in the case $r=1$, this term vanishes for any constant $k$, and then the Ricci-eigenvalue $\lambda_{a}$ also satisfies the form like \eqref{3.17}.
+		Hence, for convenience sometimes we add this term. We have completed the proof of this theorem.
+	\end{proof}
 
-	When the Ricci tensor eigenvalue $\lambda_a$ has single multiplicity,
-	by using equations \eqref{2.1}, \eqref{3.4} and \eqref{3.7}, 
-	we calculate the exterior differential of 1-form $\omega_a$: 
-	\[
-	d\omega_a=\omega_{i}\wedge\omega_{ia}=\xi_a\omega_{1}\wedge\omega_a.
-	\]
-	Setting the positive function $h(s)$ such that $\xi_a=h'/h$, and we see that
-   1-form $\frac{1}{h}\omega_a$ is closed. Then there is a local function $t$ satisfying
-	$dt =\frac{1}{h(s)} \omega_a$ and 
-	\begin{equation}\label{3.18}
-	\lambda_a=R_{1a1 a}+\sum_{\alpha \notin [a]}R_{a\alpha a\alpha}
-	=- \xi'_a-\xi_a \sum^{n}_{i=2} \xi_i.
-	\end{equation}
 	
-   Consequently, we obtain that the metric is a multiply warped product as seen in \eqref{3.10}. 
-   Furthermore, it follows that \eqref{3.14} holds from equations \eqref{2.20}, \eqref{3.17} and \eqref{3.18}. 
-   In fact, by comparing with \eqref{3.18}, there is no term $( r-1)\frac{k}{h^2}$ in \eqref{3.17}. 
-   However, in the case $r=1$, this term vanishes for any constant $k$, and then the Ricci-eigenfunction $\lambda_{a}$ also satisfies the form like \eqref{3.17}.
-   Hence, for convenience sometimes we add this term. We have completed the proof of this theorem.
-  \end{proof}
-
-
-	
-	\section{The local structure  of the case with more than two distinct Ricci-eigenfunctions}
-	In this section, and Sections 5-6, we will give the local classification of $n$-dimensional gradient Ricci solitons with harmonic Weyl curvature, according to numbers and multiplicities of distinct Ricci-eigenvalues written as $\lambda_a$, $a=2,\cdots, n$.
+	\section{The local structure  of the case with more than two distinct Ricci-eigenvalues}
+	In this section, and Sections 5-6, we will give the local classification of $n$-dimensional gradient Ricci solitons with harmonic Weyl curvature and multiply warped product metric of eigenspaces with the Ricci tensor, according to numbers and multiplicities of distinct Ricci-eigenvalues written as $\lambda_a$, $a=2,\cdots, n$.
 	To avoid repetition, unless stated otherwise, the Ricci-eigenvalues mentioned in the following discussion do not include $\lambda_1$, which is the eigenvalue with respect to the gradient vector of the potential function.
 
 	In this section, we shall study the case when $\lambda_2,~\lambda_3,~\cdots,~\lambda_n$ are at least three mutually different, but it turns out that this case cannot occur.
@@ -884,7 +951,7 @@ X'+X^2=Y'+Y^2=\xi'_i+\xi^2_i,
 By using the above basic facts, it is easy to get the following equations:
 
 \begin{lemma}\label{lemma4.1}	
-	Let $(M^n, g, f)$, $(n\geq 4)$, be an $n$-dimensional gradient Ricci soliton with harmonic Weyl curvature.
+	Let $(M^n, g, f)$, $(n\geq 4)$, be an $n$-dimensional gradient Ricci soliton with harmonic Weyl curvature  and multiply warped product metric of eigenspaces with the Ricci tensor,
 in some neighborhood $U$ of $p\in M_A \cap \{ \nabla f \neq 0  \}$, 
 suppose $\lambda_a$ and $\lambda_\alpha$ are mutually different Ricci eigenvalues with multiplicities $r_1$ and $r_2$.
 The following identities hold:
@@ -978,7 +1045,7 @@ Meanwhile, subtracting \eqref{4.10} from \eqref{4.9} shows \eqref{4.11}, while \
 	
 Proceeding, we will apply equations \eqref{4.1}, \eqref{4.2} and \eqref{4.12} to obtain the following desired result.		
 \begin{theorem}\label{thm4.1}
-Let $(M^n, g, f)$, $(n\geq 4)$, be an $n$-dimensional gradient Ricci soliton with harmonic Weyl curvature.
+Let $(M^n, g, f)$, $(n\geq 4)$, be an $n$-dimensional gradient Ricci soliton with harmonic Weyl curvature  and multiply warped product metric of eigenspaces with the Ricci tensor.
  Then in some neighborhood $U$ of $p \in M_A \cap \{ \nabla f \neq 0  \}$, the Ricci eigenvalues $\lambda_2,~\lambda_3,~\cdots,~\lambda_n$ cannot be more than two distinct. 
 \end{theorem}
 	
@@ -1009,7 +1076,7 @@ We have completed the proof of this theorem.
 
 	
 	
-\section{The local structure of the case with two distinct Ricci-eigenfunctions}
+\section{The local structure of the case with two distinct Ricci-eigenvalues}
 	
 	In this section we begin to study the case when there are exactly two distinct Ricci values in the eigenvalues 
   $\lambda_2, \cdots, \lambda_n$. Types {\rm (ii)} and {\rm (iii)} of Theorem \ref{local} come from this section.
@@ -1168,10 +1235,10 @@ holds if and only if
 The proof of this lemma is completed. 	
 \end{proof}
 Proceeding we will discuss two cases according to 
-whether one of the two Ricci-eigenfunctions is of single multiplicity.
+whether one of the two Ricci-eigenvalues is of single multiplicity.
 
-\subsection{The multiplicities of two Ricci-eigenfunctions $\lambda_a$ and $\lambda_\alpha$ are more than one}
-In this subsection, we will study the case when the multiplicities of two Ricci eigenfunctions 
+\subsection{The multiplicities of two Ricci-eigenvalues $\lambda_a$ and $\lambda_\alpha$ are more than one}
+In this subsection, we will study the case when the multiplicities of two Ricci eigenvalues 
 $\lambda_a$ and $\lambda_\alpha$ are more than one in some neighborhood $U$ of a point $p$ in $M_A \cap \{ \nabla f \neq 0  \}$.
 We have the following local classification result, 
 which forms type {\rm (ii)} of Theorem \ref{local} for $3\leq r\leq n-2$.
@@ -1205,7 +1272,7 @@ which forms type {\rm (ii)} of Theorem \ref{local} for $3\leq r\leq n-2$.
 	with the Einstein constant $(r_i-1)k_i$ for $i=1,\ 2$.
 	
 Based on what we have discussed,  we first claim that one of the functions $X$ and $Y$ vanishes,
-where $X:=\xi_a$ and $Y:=\xi_\alpha$ are the functions corresponding to the Ricci eigenfunctions 
+where $X:=\xi_a$ and $Y:=\xi_\alpha$ are the functions corresponding to the Ricci eigenvalues 
 $\lambda_a$ and $\lambda_\alpha$, respectively.
 
 In fact, if not, then neither X nor Y is zero. It follows from \eqref{5.3} that
@@ -1272,12 +1339,12 @@ In fact, if not, then neither X nor Y is zero. It follows from \eqref{5.3} that
 
 
 
-	\subsection{One of the multiplicities of two Ricci-eigenfunctions $\lambda_a$ and $\lambda_\alpha$ is single}
+	\subsection{One of the multiplicities of two Ricci-eigenvalues $\lambda_a$ and $\lambda_\alpha$ is single}
 In this subsection, we will study the case 
-that one of the multiplicities of two Ricci-eigenfunctions $\lambda_a$ and $\lambda_\alpha$ is single 
+that one of the multiplicities of two Ricci-eigenvalues $\lambda_a$ and $\lambda_\alpha$ is single 
  in some neighborhood $U$ of $p$ in $M_A \cap \{ \nabla f \neq 0  \}$.
 Without loss of generality, we assume that 
-the multiplicity of Ricci-eigenfunction $\lambda_a$ is one, that means $r_1=1,~r_2=n-2\geq2$.
+the multiplicity of Ricci-eigenvalue $\lambda_a$ is one, that means $r_1=1,~r_2=n-2\geq2$.
 Then we shall give the local structure of a gradient Ricci soliton 
 $\left(M^n, g, f \right) $ with harmonic Weyl curvature 
 in this case according to the integrability condition.
@@ -1349,7 +1416,7 @@ This will give rise to type {\rm (iii)} of Theorem \ref{local}.
 \end{theorem}
 
 \begin{proof} 
-	Let $X:=\xi_a$ and $Y:=\xi_\alpha$ be the functions corresponding to the Ricci eigenfunctions 
+	Let $X:=\xi_a$ and $Y:=\xi_\alpha$ be the functions corresponding to the Ricci eigenvalues 
 	$\lambda_a$ and $\lambda_\alpha$, respectively.
 	
 \noindent {\it Claim}.
@@ -1455,9 +1522,9 @@ From \eqref{4.3} and \eqref{4.4}, we have
 \end{proof}
 
 	\section
-	{The local structure of the case with the same Ricci-eigenfunctions}
+	{The local structure of the case with the same Ricci-eigenvalues}
 	
-	In this section we treat the case that all Ricci-eigenfunctions are equal, except for the first one.
+	In this section we treat the case that all Ricci-eigenvalues are equal, except for the first one.
 	We set
 	\[
 	\lambda_{\alpha}:=\lambda_{2}= \cdots= \lambda_{n}.
@@ -1486,7 +1553,7 @@ From \eqref{4.3} and \eqref{4.4}, we have
 	Let $(M^n, g,f)$ be an $n$-dimensional gradient Ricci soliton 
 	with harmonic Weyl curvature. 	
 	Suppose  that in some neighborhood $U$ of $p$ in $M_A \cap \{ \nabla f \neq 0  \}$, 
-    all Ricci-eigenfunctions are equal except for the one with respect to the gradient vector of the potential function.
+    all Ricci-eigenvalues are equal except for the one with respect to the gradient vector of the potential function.
 	Then $g$ is a warped product:
 		\begin{equation} \label{metr}
 		g= ds^2 +  h^2(s) \tilde{g},
@@ -1499,7 +1566,7 @@ From \eqref{4.3} and \eqref{4.4}, we have
 	
 	\begin{proof}
 		The first part of this theorem has been obtained by Theorem \ref{mulwar} in the third section.
-		In particular, if all Ricci-eigenfunctions are equal, then the metric is Einstein. 
+		In particular, if all Ricci-eigenvalues are equal, then the metric is Einstein. 
 		If $f$ is not constant, then the conclusion of Theorem \ref{same} still holds.  
 		In fact,  Cheeger and Colding \cite{CC} presented a
 		characterization of warped product structures on a Riemannian manifold $M$ in terms
@@ -1582,56 +1649,21 @@ This completes the proof of Theorem \ref{local}.
 \hfill $\Box$
 \medskip
 
-Finally, we complete the proof the (local) classification of gradient Ricci solitons 
-with harmonic curvature.
 
 \vspace{0.3cm}
 
-\noindent {\bf Proof of Corollary \ref{harcur}.}
-By the second Bianchi identity, the gradient Ricci soliton with harmonic curvature is of
-constant scalar curvature.
-On the other hand, the soliton metric $ds^2 + s^{\frac{2(n-3)}{n-1}} dt^2+ s^{\frac{4}{n-1}} \tilde{g}$ 
-in Theorem \ref{local} {\rm (iii)} does not have constant scalar curvature,
-so does not have harmonic curvature.
-
-Note that when $2 \leq r \leq n-2$, type
-{\rm (ii)} of Corollary \ref{harcur} should come from Theorem \ref{local} {\rm (ii)}.
-We need to consider the cases $r=1$ and $r=n$ which comes from Theorem \ref{local} {\rm (iv)} 
-with the metric $ g=ds^2 + h^2(s) \tilde{g}$,
-where $\tilde{g}$ is an Einstein metric.
-Lemma \ref{2.1} gives $R +|\nabla f|^2 - 2\rho f = {\rm constant}$.
-We differentiate the both side with respect to the local variable $s$ where $|\nabla f| \neq 0$, 
-and get $2 f^{'} f^{''} = 2\rho f^{'}$ since $R$ is constant. 
-So, $f^{''} = \rho$.  From \eqref{6.2} and \eqref{6.1}, $h^{''} =0$.
-Either $h=c$ or $h=cs$ for some constant $c\neq 0$ after shifting $s$ by a constant.
-
-When $h=c$, from \eqref{6.3} we get $\frac{k}{c^2} = \frac{\rho}{n-2}$. 
-We have $g = ds^2 + \tilde{g}$, where $\tilde{g}$ is an Einstein metric
-with the Einstein constant $\rho$. We set $f= \frac{\rho}{2} s^2+C$ by shifting $s$.
-As $f$ is not constant, $\rho \neq 0$, which forms type {\rm (ii)} for $r=1$.  
-
-When $h=cs$, using \eqref{6.2} and $f^{''} = \rho $ 
-we obtain that $f^{'} = \rho s+c_1$ and $k= c^2$. Then $f= \frac{1}{2}\rho s^2$ and
-$\rho \neq 0$.
-Thus, $g = ds^2 + s^2 \tilde{g}, $ where $\tilde{g}$ is an Einstein metric
-with the Einstein constant $(n-2)$. 
-Moreover
-from \eqref{3.5},
-$f_{1,1}=f_{\alpha,\alpha}=\rho\neq0$ and $f_{\alpha,\beta}=f_{1,\alpha}=0$. 
-We have $g=ds^2 + s^2d\mathbb{S}^2_{n-1}$ from the proof of Theorem \ref{twodis},
-which yields the Gaussian soliton.
-We have completed the proof of Corollary \ref{harcur}. 
-\hfill $\Box$
-
 \medskip
 	\noindent {\bf Acknowledgments}
-	This work was completed while the author was visiting Lehigh University from August, 2019 to August, 2020. 
+	This work was essentially completed while the author was visiting Lehigh University from August, 2019 to August, 2020. 
 	She would like to thank her advisor Professor Huai-Dong Cao  
 	for suggesting the research project, and for his invaluable guidance, constant encouragement and support.
 	She is grateful to her advisors Professor Yu Zheng and Professor Zhen Guo for their constant encouragement and support.
 	She also would like to thank Junming Xie, Jiangtao Yu, and other members of the geometry group at Lehigh for their interest, 
     helpful discussions, and suggestions during the preparation of this paper. 
-    She also would like to thank the China Scholarship Council (No: 201906140158)
+    She is particularly grateful to Professor Jongsu Kim for pointing out an error in the first (arXiv) version.
+    She also would like to thank the China Scholarship Council (No: 201906140158), the Scientific Research Foundation of Chongqing University of Technology
+    (No.2021ZDZ023) and the Science and Technology Research Project of Chongqing Education Commission
+    (No.KJZD-K202201102).
     and the Program for Graduate Students of East China Normal University (No: YBNLTS 2020-044)
     for the financial support, and the Department of Mathematics at Lehigh University
     for hospitality and for providing a great environment for research. 
@@ -1673,7 +1705,7 @@ math.duke.edu/$\sim$bryant/3DRotSymRicciSolitons.pdf
 \bibitem{CLS} H.-D. Cao, F.J. Li and J. Siene, {\em  Quasi-Einstein manifolds with harmonic Weyl curvature}, in preparation. 
 		
 		\bibitem{CY} H.-D. Cao and J.T. Yu, {\em On complete gradient steady Ricci solitons with vanishing $D$-tensor},
-		to appear in Proc. Amer. Math. Soc. 
+		Proc. Amer. Math. Soc. 149 (4) (2021), 1733–1742.
 		
 		\bibitem{CWZ} X. Cao, B. Wang and Z. Zhang, {\em On locally conformally flat gradient shrinking Ricci solitons}, 
 		Commun. Contemp. Math. 13 (2) (2011), 269-282.
@@ -1740,8 +1772,11 @@ math.duke.edu/$\sim$bryant/3DRotSymRicciSolitons.pdf
 				
 	   \bibitem{S} J. Shin, {\em On the classification of 4-dimensional $(m,\rho)$-quasi-Einstein manifolds with harmonic Weyl curvature}. Ann. Global Anal. Geom. 51(4) (2017), 379–399.
 
+ \bibitem{U}
+B. \:Unal,{\em Multiply warped products}. J. Geom. Phys., 34 (2000), 287-301.
+
      \bibitem{WWW}
-    J.-Y Wu, P. Wu and W. Wylie, {\em  Gradient shrinking Ricci solitons of half harmonic Weyl curvature}. Calc. Var. Partial Differential Equations 57 (2018), no. 5, Paper No. 141, 15 pp.
+    J.-Y Wu, P. Wu and W. Wylie, {\em  Gradient shrinking Ricci solitons of half harmonic Weyl curvature}. Calc. Var. Partial Differential Equations, 57 (2018), no. 5, Paper No. 141, 15 pp.
 		
 		\bibitem{Z} Z.H. Zhang, {\em Gradient shrinking solitons with vanishing Weyl tensor}, Pacific J. Math. 242 (1) (2009), 189-200.
 	\end{thebibliography}
